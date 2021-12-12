@@ -3,7 +3,7 @@
 /* акцент #2196F3  */
 /* черный цвет заголовка #000000 */
 /* белый цвет #FFFFFF */
-/* прозрачный белый цвет rgba(255, 255, 255, 0,6) */
+/* прозрачный белый цвет rgba(255, 255, 255, 0.6)) */
 /* основной цвет фона #ffffff */
 /* вторичный цвет фона #F5F4FA */
 :root {
@@ -12,6 +12,9 @@
   --accent-color: #2196f3;
   --secondary-accent-color: #f5f4fa;
   --primary-white-color: #ffffff;
+  --primary-white-color-60: rgba(255, 255, 255, 0.6);
+  --footer-bg-color: #2f303a;
+  --temporary-bg-color: #2f303a;
 }
 
 .list {
@@ -21,7 +24,7 @@
 body {
   color: var(--primary-text-color);
   background-color: var(--primary-white-color));
-  font-family: Roboto;
+  font-family:Roboto;
 }
 
 /* cстилизация логотипа */
@@ -42,22 +45,21 @@ body {
   color: var(--accent-color);
 }
 
-
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
 }
 
-.aut-nav .link {
-  color: #757575;
+.site-contact  {
+  color: var(--primary-text-color);
 }
 
-.aut-nav .link:hover,
-.aut-nav .link:focus {
+.site-contact:hover,
+.site-contact:focus {
   color: var(--accent-color);
 }
 
-/* cстилизация Hero */
+/* стилизация Hero */
 .hero-title {
   color: var(--primary-white-color);
 }
@@ -82,4 +84,12 @@ body {
 .button.secondary {
   color: var(--title-text-color;)
   background-color: var(--secondary-accent);
+}
+
+/* footer */
+.footer-addres {
+  color: var(--primary-white-color);
+}
+.footer-contact {
+  color: var(--primary-white-color-60);
 }
