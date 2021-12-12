@@ -16,14 +16,16 @@ body {
   background-color: #e5e5e5;
 }
 
-/* cстилизация заголовка */
+/* cстилизация логотипа */
+
 .logo {
+  color: #000000;
+  font-family: Raleway;
+}
+.logo .color {
   color: #2196f3;
 }
-.site-nav .link:hover,
-.site-nav .link::focus {
-  color: #2196f3;
-}
-.section-title {
+
+.site-nav .link:hover {
   color: red;
 }
