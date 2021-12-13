@@ -7,6 +7,7 @@
   --team-bg-color: #f5f4fa;
   --footer-bg-color: #2f303a;
   --temporary-bg-color: #2f303a;
+  --button-bg-color: #f5f4fa;
 }
 
 body {
@@ -178,4 +179,42 @@ body {
 .footer-contact:hover,
 .footer-contact:focus {
   color: var(--accent-color);
+}
+
+/* разметка Портфолищ */
+.button-works {
+  color: var(--title-text-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  border: none;
+  background-color: var(--button-bg-color);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.button-works:hover,
+.button-works:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color-hover);
+}
+
+.button-current {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.portfolio-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-text {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--primary-text-color);
 }
