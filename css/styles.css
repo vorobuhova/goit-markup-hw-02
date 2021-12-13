@@ -1,95 +1,181 @@
-/* цвет основного текста #757575 */
-/* вторичный цвет текста #212121 */
-/* акцент #2196F3  */
-/* черный цвет заголовка #000000 */
-/* белый цвет #FFFFFF */
-/* прозрачный белый цвет rgba(255, 255, 255, 0.6)) */
-/* основной цвет фона #ffffff */
-/* вторичный цвет фона #F5F4FA */
 :root {
-  --primary-text-color: #757575;
   --title-text-color: #212121;
-  --accent-color: #2196f3;
-  --secondary-accent-color: #f5f4fa;
+  --primary-text-color: #757575;
   --primary-white-color: #ffffff;
-  --primary-white-color-60: rgba(255, 255, 255, 0.6);
+  --accent-color: #2196f3;
+  --accent-color-hover: #188ce8;
+  --team-bg-color: #f5f4fa;
   --footer-bg-color: #2f303a;
   --temporary-bg-color: #2f303a;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  background-color: var(--primary-white-color);
+}
+
+/* All site */
+
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.link {
+  text-decoration: none;
 }
 
 .list {
   list-style: none;
 }
 
-body {
-  color: var(--primary-text-color);
-  background-color: var(--primary-white-color));
-  font-family:Roboto;
-}
-
 /* cстилизация логотипа */
 .logo {
-  color: #000000;
   font-family: Raleway;
+  color: #000000;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+  color: var(--accent-color);
 }
-.logo .color {
+
+.logo-accent {
+  color: var(--title-text-color);
+}
+
+.logo-accent:hover,
+.logo-accent:focus {
   color: var(--accent-color);
 }
 
 /* стилизация навигации */
-.site-nav .link {
+.site-nav-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
 
-.site-nav .link.current {
+.site-nav-text:hover,
+.site-nav-text:focus {
   color: var(--accent-color);
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(--accent-color);
-}
-
-.site-contact  {
+.site-contact {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
 
 .site-contact:hover,
-.site-contact:focus {
+.site-contact:focus,
+.current {
   color: var(--accent-color);
 }
 
 /* стилизация Hero */
+.hero-bg-temporary {
+  background-color: var(--temporary-bg-color);
+}
+
 .hero-title {
   color: var(--primary-white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
-/* общая стилизация секции */
-.section-title,
-.section .title {
-  color: var(--title-text-color);
-}
-
-/* button */
-.button {
+.hero-button {
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.button.primary {
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--accent-color-hover);
 }
 
-.button.secondary {
-  color: var(--title-text-color;)
-  background-color: var(--secondary-accent);
+/* advantages */
+.advantages-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.advantages-text {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--primary-text-color);
+}
+
+/* team */
+.team {
+  background-color: var(--team-bg-color);
+}
+
+.team-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.team-role {
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--primary-text-color);
 }
 
 /* footer */
-.footer-addres {
+.footer {
+  background-color: var(--footer-bg-color);
+}
+
+.logo-accent-footer {
   color: var(--primary-white-color);
 }
+
+.logo-accent-footer:hover,
+.logo-accent-footer:focus {
+  color: var(--accent-color);
+}
+
+.footer-addres {
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+  color: var(--primary-white-color);
+}
+
 .footer-contact {
-  color: var(--primary-white-color-60);
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-addres:hover,
+.footer-addres:focus,
+.footer-contact:hover,
+.footer-contact:focus {
+  color: var(--accent-color);
 }
