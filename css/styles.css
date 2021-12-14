@@ -36,8 +36,7 @@ body {
 
 /* cстилизация логотипа */
 .logo {
-  font-family: Raleway;
-  color: #000000;
+  font-family: 'Raleway', sans-serif;
   font-size: 26px;
   font-weight: 700;
   line-height: 1.19;
@@ -96,6 +95,11 @@ body {
   text-transform: uppercase;
 }
 
+/* button */
+.pointer {
+  cursor: pointer;
+}
+
 .hero-button {
   font-family: Roboto, sans-serif;
   font-weight: 700;
@@ -119,7 +123,6 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
@@ -188,7 +191,6 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  letter-spacing: 0.03em;
   border: none;
   background-color: var(--button-bg-color);
   border-radius: 4px;
